@@ -1,0 +1,11 @@
+     .--,       .--,
+    ( (  \.---./  ) )
+     '.__/o   o\__.'            1 - Ajouter des ingrédients
+        {=  ^  =}                 
+         >  -  <                2 - Afficher la liste des ingrédiants
+        /       \
+       //       \\              3 - Afficher la liste des recettes
+      //|   .   |\\
+      "'\       /'"_.-~^`'-.    4 - Retour
+         \  _  /--'         `
+       ___)( )(___
