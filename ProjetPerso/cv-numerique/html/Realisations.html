@@ -7,24 +7,43 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
   <style>
+    .carousel {
+      position: relative;
+      display: flex; /* Utilisation de Flexbox */
+      justify-content: center; /* Centre les éléments horizontalement */
+      align-items: center; /* Centre les éléments verticalement */
+      height: auto; /* La hauteur de l'image sera dynamique */
+    }
+
+    #carouselWithAccordion {
+      margin-top: 3em;
+    }
+
+    .carousel-inner {
+      position: relative;
+      width: 100%;
+    }
 
     .carousel-control-prev,
     .carousel-control-next {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 5;  /* Assurez-vous qu'ils soient au-dessus du carrousel */
+      top: 80%;
+      transform: translateY(-50%); /* Centre verticalement */
+      z-index: 1; /* Pour s'assurer que les boutons sont au-dessus de l'image */
     }
 
     .carousel-control-prev {
-      left: 10px;  /* Positionnez le bouton précédent à gauche */
+      left: 20px;
     }
 
     .carousel-control-next {
-      right: 10px;  /* Positionnez le bouton suivant à droite */
+      right: 20px;
     }
 
-
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1); /* Change la couleur des icônes en blanc ou noir */
+    }
   </style>
 </head>
 <body>
@@ -84,12 +103,15 @@
 
 <!-- Main Content -->
 <main class="container">
-  <div id="carouselWithAccordion" class="carousel slide">
+  <div id="carouselWithAccordion" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
 
       <!-- Slide 1 - Application Classification -->
       <div class="carousel-item active">
-        <img src="" class="d-block w-100" alt="Screen exemple classification">
+        <h2>Slide 1 - Application Classification</h2>
+        <div class="ratio ratio-16x9">
+          <img src="https://raw.githubusercontent.com/Benjamin-etu-lille/Universite/main/ProjetPerso/cv-numerique/img/app-classify-screen.png" class="d-block w-100" alt="Screen exemple classification">
+        </div>
         <!-- Accordéon -->
         <div class="accordion" id="accordionSlide1">
           <div class="accordion-item">
@@ -105,7 +127,6 @@
                     <h3>Présentation du projet</h3>
                     <p>Le projet a pour objectif de développer un outil permettant de charger, afficher et classifier des données en utilisant l’algorithme k-NN 
                     (k plus proches voisins). Ce projet offre une interface graphique permettant de visualiser des jeux de données sous forme de nuages de points.</p>
-
                     <h3>Fonctionnalités principales</h3>
                     <ul>
                       <li><strong>Chargement et affichage des données :</strong> L'utilisateur peut charger des fichiers de données et les visualiser sous forme de nuage de points. Le projet supporte des jeux de données comme Iris.</li>
@@ -135,16 +156,19 @@
 
       <!-- Slide 2 - App-assistant personnel de voyage -->
       <div class="carousel-item">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nChFIm9HkLQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+        <h2>Slide 2 - Application Assistant Personnel de Voyage</h2>
+        <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/nChFIm9HkLQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+        </div>
         <!-- Accordéon -->
-        <div class="accordion" id="accordionSlide3">
+        <div class="accordion" id="accordionSlide2">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="heading3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            <h2 class="accordion-header" id="heading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                 Détails du Projet
               </button>
             </h2>
-            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionSlide3">
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionSlide2">
               <div class="accordion-body">
                 <section id="Projet-JAVA" class="container">
                   <div class="content">
@@ -184,7 +208,10 @@
 
       <!-- Slide 3 - Projet BDD -->
       <div class="carousel-item">
+        <h2>Slide 3 - Ventilation BDD Parcoursup & Statistiques</h2>
+        <div class="ratio ratio-16x9">
         <img src="https://www.datasunrise.com/wp-content/uploads/2024/07/Database-Audit-in-PostgreSQL.webp" class="d-block w-100" alt="BDD posgres">
+        </div>
         <!-- Accordéon -->
         <div class="accordion" id="accordionSlide3">
           <div class="accordion-item">
@@ -236,37 +263,34 @@
 
       <!-- Slide 4 - Procédure installation Debian -->
       <div class="carousel-item">
+        <h2>Slide 4 - Procédure installation Debian</h2>
+        <div class="ratio ratio-16x9">
         <img src="https://www.stackscale.com/wp-content/uploads/2022/08/debian-gnu-linux-distro-stackscale.jpg" class="d-block w-100" alt="Debian Linux">
+        </div>
         <!-- Accordéon -->
-        <div class="accordion" id="accordionSlide3">
+        <div class="accordion" id="accordionSlide4">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="heading3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            <h2 class="accordion-header" id="heading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                 Détails du Projet
               </button>
             </h2>
-            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionSlide3">
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionSlide4">
               <div class="accordion-body">
-                <section id="Projet-Debian" class="container">
+                <section id="ProjetDebian" class="container">
                   <div class="content">
                     <h3>Présentation du projet</h3>
-                    <p>
-                      Pour cette SAE, nous avons réalisé une installation automatique de Debian sur une machine virtuelle, en y intégrant également l'installation des paquets spécifiques demandés par l'encadrant. 
-                      Le projet comprend :
-                    </p>
-                    <ul>
-                      <li>Une procédure automatisée d'installation de Debian.</li>
-                      <li>La configuration des paquets nécessaires.</li>
-                      <li>Un rapport détaillé disponible en format PDF, HTML et Markdown.</li>
-                    </ul>
-                    <p>Langages et outils : Markdown, Debian, Virtualisation</p>
+                    <p>Ce projet consiste en la création d'un script bash permettant d'installer une machine virtuelle Debian depuis un ISO téléchargé. 
+                    Nous avons abordé dans ce projet des notions liées à l'installation et la configuration d'un environnement 
+                    Debian sur machine virtuelle.</p>
+                    <p>Langages et outils : Bash, Debian</p>
                     <p>
                       <a href="https://github.com/Benjamin-etu-lille/Benjamin-etu-lille.github.io/blob/main/archive/Procedure-InstalationDebian(MD).zip">
                         <strong>Télécharger le projet (ZIP)</strong>
                       </a>
                     </p>
                     <p>
-                      Pensez à consulter le <strong>README.md</strong> pour obtenir plus de détails sur la procédure d'installation.
+                      Pensez à consulter le <strong>README.md</strong> pour obtenir plus de détails sur l'utilisation des scripts.
                     </p>
                     <p>
                       <a href="https://github.com/Benjamin-etu-lille/Universite/tree/main/ProjetScolaire/Universite-main/Annee_1/Semestre_2/Procedure-InstalationDebian(MD)" target="_blank">
@@ -277,24 +301,74 @@
                   </div>
                 </section>
               </div>
-            </div>            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 - Site Web Statique Uber -->
+      <div class="carousel-item">
+        <h2>Slide 5 - Site Web Statique Uber</h2>
+        <div class="ratio ratio-16x9">
+          <img src="https://raw.githubusercontent.com/Benjamin-etu-lille/Universite/main/ProjetPerso/cv-numerique/img/site-uber_screen.png" class="d-block w-100" alt="Debian Linux">
+        </div>
+        <!-- Accordéon -->
+        <div class="accordion" id="accordionSlide3">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                Détails du Projet
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionSlide3">
+              <div class="accordion-body">
+                <section id="Projet-Covoiturage" class="container">
+                  <div class="content">
+                    <h3>Résumé du projet</h3>
+                    <p>
+                      Cette SAE avait pour objectif l'analyse des besoins clients et le respect d'un cahier des charges. Réalisé en binôme, ce projet consistait à :
+                    </p>
+                    <ul>
+                      <li>Imaginer des personas pour mieux cibler les utilisateurs potentiels.</li>
+                      <li>Créer un GoogleForm pour collecter les besoins des utilisateurs.</li>
+                      <li>Concevoir une plateforme de covoiturage respectant ces besoins, en utilisant HTML et CSS.</li>
+                    </ul>
+                    <p>Langages et outils : HTML, CSS, Google Forms</p>
+                    <p>
+                      <a href="https://github.com/Benjamin-etu-lille/Benjamin-etu-lille.github.io/blob/main/archive/SiteWeb-Uber.zip">
+                        <strong>Télécharger le projet (ZIP)</strong>
+                      </a>
+                    </p>
+                    <p>
+                      Pensez à consulter le <strong>README.md</strong> pour obtenir plus de détails sur l'utilisation des scripts.
+                    </p>
+                    <p>
+                      <a href="https://github.com/Benjamin-etu-lille/Universite/tree/main/ProjetScolaire/Universite-main/Annee_1/Semestre_1/SiteWeb-Uber" target="_blank">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width: 30px; height: 30px; vertical-align: middle;">
+                        Voir le projet sur GitHub
+                      </a>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>                      
           </div>
         </div>
       </div>
     </div>
-    <!-- Ajout des boutons pour swiper le carrousel -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselWithAccordion" data-bs-slide="prev">
-      <img src="chemin/vers/image-prev.png" alt="Précédent" class="carousel-control-prev-img">
-      <span class="visually-hidden">Précédent</span>
-    </button>
-    
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselWithAccordion" data-bs-slide="next">
-      <img src="chemin/vers/image-next.png" alt="Suivant" class="carousel-control-next-img">
-      <span class="visually-hidden">Suivant</span>
-    </button>
-    
   </div>
+  <!-- Contrôles du carrousel -->
+  <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselWithAccordion" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Précédent</span>
+  </button>
+  <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselWithAccordion" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Suivant</span>
+  </button>
+
 </main>
+
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-4">
@@ -310,3 +384,5 @@
 
 </body>
 </html>
+
+
