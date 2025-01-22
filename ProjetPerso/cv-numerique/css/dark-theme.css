@@ -1,0 +1,39 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #1f1f1f;
+}
+
+.navbar a {
+  color: #f8f9fa;
+}
+
+.navbar a:hover {
+  color: #ffc107;
+}
+
+.card {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: 1px solid #343a40;
+}
+
+.card-title {
+  color: #ffc107;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #f8f9fa;
+}
+
+a {
+  color: #ffc107;
+}
+
+a:hover {
+  color: #ffdd57;
+}

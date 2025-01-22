@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #358bff; /* Couleur principale (Noir foncé) */
+  --secondary-color: #003366; /* Bleu foncé */
+  --accent-color: #0d6efd; /* Bleu clair (pour hover et accents) */
+  --light-bg-color: #f8f9fa; /* Fond clair */
+  --footer-bg-color: #212529; /* Fond du footer */
+  --text-color: #fff; /* Texte principal blanc */
+  --muted-text-color: #6c757d; /* Texte secondaire */
+}
+
+
+p {
+  font-size: 1.2em;
+}
+
+header {
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-size: 1.4em;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Hover effect */
+.highlight:hover {
+  background-color: rgba(var(--accent-color), 0.1);
+  transform: translateY(-5px);
+}
+
+body{
+  background-color: var(--light-bg-color);
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--footer-bg-color);
+  margin-top: 50px;
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
+
+/* Add some margin between sections */
+section {
+  margin-bottom: 4rem;
+}

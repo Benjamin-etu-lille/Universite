@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Conducteur</title>
+    <link rel="stylesheet" href="Page_acceuil.css">
+</head>
+
+<body>
+    <div class="boite">
+        <nav class="menu">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#mac">Mac</a></li>
+                <li><a href="#ipad">iPad</a></li>
+                <li><a href="#iphone">iPhone</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#AirPods">AirPods</a></li>
+                <li><a href="#maison">TY & Maison</a></li>
+                <li><a href="#divertissement">Divertissement</a></li>
+                <li><a href="#accessoires">Accessoires</a></li>
+                <li><a href="Page_service.html">Service</a></li>
+                <li><a href="#panier">Panier</a></li>
+                <input type="text" placeholder="Rechercher">
+            </ul> 
+        </nav>
+    </div>
+    <div class="contenu">
+        <form action="#" method="post">
+            <h2>Crée un profile conducteur</h2>
+            <p>Pour assurer la qualité et la sécurité de transport de nos clients vers nos magasins, nous recherchons des chauffeurs agréés.
+            En vous inscrivant, vous contribuez à maintenir nos normes RSE et de paticiper a la reduction de votre empreinte carbone.</p>
+            <p>Inscrivez-vous dès aujourd'hui pour participer au servie de covoiturage En Complétent le formulaire d'inscription en fournissant les informations requises, telles que votre nom, prénom, Adress mail, un mot de passe sécurisé,Numéro de téléphone,Le Model du véhicule,Le Nombre de places disponibles du véhicule. Assurez-vous de choisir un mot de passe unique et difficile à deviner pour protéger votre compte.</p>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="prenom">Age :</label>
+            <input type="number" id="Age" name="age" required>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="model">Model du véhicule :</label>
+            <input type="text" id="text" name="text" required>
+
+            <label for="places">Nombre de places disponibles :</label>
+            <input type="number" id="places" name="places" min="1" required>
+            <h2></h2>
+            <label class="conditions-label">
+                <input type="checkbox" id="acceptConditions" name="acceptConditions">
+                <a href="MentionLegal.html">J'ai lu et accepté les conditions générales d'utilisation </a>
+            </label>
+            <p></p>
+        </form>
+        <button>
+            <a href="Page_service.html">Valider</a>
+        </button>
+    </div>
+</div>
+</body>
+
+</html>
