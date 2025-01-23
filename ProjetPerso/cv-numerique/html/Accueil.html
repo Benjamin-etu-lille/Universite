@@ -64,13 +64,21 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="Accueil.html">Accueil</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="container d-flex justify-content-between">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Benjamin Sere -->
+    <a class="navbar-brand" href="#">Benjamin Sere</a>
+  
+    <!-- Menu principal -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Accueil.html">Accueil</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Formations
@@ -94,10 +102,12 @@
           <a class="nav-link dropdown-toggle" href="#" id="realisationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Réalisations
           </a>
-          <ul class="dropdown-menu" aria-labelledby="competencesDropdown">
-            <li><a class="dropdown-item" href="Competences.html#DevApplication">Développement d'applications</a></li>
-            <li><a class="dropdown-item" href="Competences.html#BDD">Gestion de bases de données</a></li>
-            <li><a class="dropdown-item" href="Competences.html#Organisation">Organisation et gestion de projet</a></li>
+          <ul class="dropdown-menu" aria-labelledby="realisationsDropdown">
+            <li><a class="dropdown-item" href="Realisations.html#Application-Classification">Application Classification</a></li>
+            <li><a class="dropdown-item" href="Realisations.html#Application-Assistant-Personnel-de-Voyage">Application Assistant Personnel de Voyage</a></li>
+            <li><a class="dropdown-item" href="Realisations.html#Ventilation-BDD-Parcoursup-&-Statistiques">Organisation et gestion de projet</a></li>
+            <li><a class="dropdown-item" href="Realisations.html#Procedure-installation-Debian">Procédure installation Debian</a></li>
+            <li><a class="dropdown-item" href="Realisations.html#Site-Web-Statique-Uber">Site Web Statique Uber</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -105,15 +115,30 @@
         </li>
       </ul>
     </div>
+    
+    <!-- Liens sociaux -->
+    <div class="d-flex align-items-center">
+      <!-- Lien GitHub avec image -->
+      <a href="https://github.com/Benjamin-etu-lille/Universite" target="_blank" class="text-white me-3">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width: 30px; height: 30px; vertical-align: middle;">
+      </a>
+    
+      <!-- Lien LinkedIn avec icône -->
+      <a href="https://www.linkedin.com/in/benjamin-sere-8578b2333/" class="text-white me-3">
+        <i class="bi bi-linkedin" style="font-size: 30px;"></i>
+      </a>
+    </div>
+    
   </div>
-  <hr class="navbar-hr">
 </nav>
+
+
 
 <!-- Header -->
 <header class="text-white text-center py-5">
   <img src="votre-photo.jpg" alt="Votre photo" class="profile-img mb-3">
   <h1 class="display-4">Benjamin Sere</h1>
-  <p>Étudiant en BUT informatique | Recherche d'un stage de 10 semaines</p>
+  <p>Étudiant en BUT informatique | Recherche d'un stage de 10 à 12 semaines a partir du permière Avril 2025</p>
 </header>
 
 <!-- Main Content -->
@@ -121,9 +146,10 @@
   <!-- Profil Section -->
   <section id="profil" class="mb-5">
     <h2 class="text-primary">Profil</h2>
-    <p>Je m'appelle Benjamin SERE, étudiant en deuxième année de BUT Informatique à l'Université de Lille. Passionné par le développement d’applications, je suis à la recherche d’un stage de 10 semaines à partir du 1er avril 2025 pour enrichir mes compétences et contribuer à des projets concrets dans la chaîne de production logicielle.</p>
+    <p>Je m'appelle Benjamin SERE, étudiant en deuxième année de <a href="https://www.univ-lille.fr/formations/fr-00082372" target="_blank">BUT Informatique à l'Université de Lille</a>. Passionné par le développement d’applications, je suis à la recherche d’un stage de 10 semaines à partir du 1er avril 2025 pour enrichir mes compétences et contribuer à des projets concrets dans la chaîne de production logicielle.</p>
     <p>Fort d’une formation technique solide et d’une expérience pratique sur des projets variés, je maîtrise des technologies comme Java, C, PostgreSQL et les design patterns tels que DAO et MVC. Mes compétences en gestion collaborative avancée avec Git et ma connaissance des méthodologies Agile me permettent d’évoluer efficacement dans des équipes de développement.</p>
-    <p>N’hésitez pas à explorer mes projets sur GitLab et à me contacter pour discuter d'une éventuelle collaboration.</p>
+    <p>N’hésitez pas à explorer mes projets sur <a href="https://github.com/Benjamin-etu-lille/Universite" target="_blank"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width: 30px; height: 30px; vertical-align: middle;"> 
+      GitHub </a> et à me contacter pour discuter d'une éventuelle collaboration.</p>
   </section>
 
   <!-- Experience Section -->
@@ -177,10 +203,18 @@
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-4">
   <p>&copy; 2025 Benjamin Sere. Tous droits réservés.</p>
+  <p>Ce site utilise Bootstrap frontend toolkit, il est également heberger sur <a href="https://github.com/" target="_blank">github.io</a> </p>
+  <!-- Liens sociaux -->
   <div>
-    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+    <!-- Lien GitHub avec image -->
+    <a href="https://github.com/Benjamin-etu-lille/Universite" target="_blank" class="text-white me-3">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width: 30px; height: 30px; vertical-align: middle;">
+    </a>
+  
+    <!-- Lien LinkedIn avec icône -->
+    <a href="https://www.linkedin.com/in/benjamin-sere-8578b2333/" class="text-white me-3">
+      <i class="bi bi-linkedin" style="font-size: 30px;"></i>
+    </a>
   </div>
 </footer>
 
