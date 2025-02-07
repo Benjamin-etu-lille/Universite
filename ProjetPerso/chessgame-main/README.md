@@ -16,8 +16,7 @@ Ce projet est un jeu d'échecs développé par mes soins pour le plaisir d'appre
 ## Utilisation
 
 1. Lancez le jeu à partir de maven avec `mvn javafx:run`.
-2. Cliquez sur les pièces du plateau pour les déplacer selon les règles des échecs.
-3. Profitez de la partie !
+2. Profitez de la partie !
 
 ## Auteurs
 
